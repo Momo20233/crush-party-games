@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "build": "npm ci --prefix apps/tap-moto && npm run build:static --prefix apps/tap-moto && npm run assemble",
     "assemble": "node scripts/assemble-site.mjs"
   },
   "engines": {
