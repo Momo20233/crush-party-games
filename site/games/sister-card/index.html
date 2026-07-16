@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="无需安装的手机端大小姐牌聚会抽卡游戏。">
+<meta name="theme-color" content="#1f120e">
+<title>CRUSH 大小姐牌 · Mistress Card</title>
+<link rel="icon" href="images/logo-img-v2.jpg">
+<link rel="stylesheet" href="css/style.css?v=20260716b">
+</head>
+<body>
+<div class="lamp"></div>
+
+<main class="app">
+  <h1 class="sr-only">CRUSH 大小姐牌</h1>
+  <a class="lobby-link" href="../../" aria-label="返回游戏大厅">← 大厅</a>
+  <div class="fx-overlay" id="fxOverlay" aria-hidden="true">
+    <video class="fx-video" data-fx-key="EVERYONE" src="animations/fx-everyone.mp4" preload="none" muted playsinline webkit-playsinline aria-label="一起喝动效"></video>
+    <video class="fx-video" data-fx-key="TOAST" src="animations/fx-toast.mp4" preload="none" muted playsinline webkit-playsinline aria-label="交杯动效"></video>
+    <video class="fx-video" data-fx-key="REVERSE" src="animations/fx-reverse.mp4" preload="none" muted playsinline webkit-playsinline aria-label="顺序反转动效"></video>
+    <video class="fx-video" data-fx-key="BREAK" src="animations/fx-break.mp4" preload="none" muted playsinline webkit-playsinline aria-label="抽断牌动效"></video>
+  </div>
+  <span class="deck-count" id="deckCount">剩余 <b id="remainCount">59</b> / <b id="totalCount">59</b></span>
+  <button class="btn btn-ghost shuffle-btn" id="shuffleBtn">重新洗牌</button>
+
+  <div class="stage">
+    <!-- reveal slot: centered in the remaining space -->
+    <div class="table-area">
+      <div class="slot">
+        <div class="placeholder" id="placeholder"><div class="logo-mark"></div></div>
+        <div class="big-card glow" id="bigCard" role="button" tabindex="0" aria-label="收起已抽卡牌">
+          <div class="bface bback"></div>
+          <div class="bface bfront">
+            <img class="bart" id="bArt" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- static spread of cards, anchored to the bottom edge; tap any card to draw it -->
+    <div class="fan-area" id="fanArea">
+      <div class="fan" id="fan"></div>
+    </div>
+  </div>
+</main>
+
+<script src="js/script.js?v=sisters3"></script>
+</body>
+</html>

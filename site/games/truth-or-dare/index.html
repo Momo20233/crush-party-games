@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0a0312">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="无需安装的手机端真心话大冒险随机抽卡游戏。">
+<title>Truth or Dare 真心话大冒险</title>
+<link rel="icon" href="images/logo.webp">
+<link rel="preload" href="images/background.webp" as="image">
+<link rel="stylesheet" href="css/style.css?v=20260716b">
+</head>
+<body>
+<a class="lobby-link" href="../../" aria-label="返回游戏大厅">← 大厅</a>
+<div id="app">
+  <img class="logo" src="images/logo.webp" alt="Truth or Dare 真心话大冒险">
+
+  <div class="cards">
+    <button class="card-btn truth" type="button" data-draw="truth" aria-label="Truth 真心话">
+      <img src="images/truth-card-back.webp" alt="TRUTH 真心话" decoding="async">
+    </button>
+    <button class="card-btn dare" type="button" data-draw="dare" aria-label="Dare 大冒险">
+      <img src="images/dare-card-back.webp" alt="DARE 大冒险" decoding="async">
+    </button>
+  </div>
+
+  <button class="random-btn" type="button" data-draw="random" aria-label="Random 都可以">
+    <img src="images/random-btn.png" alt="RANDOM 都可以" decoding="async">
+  </button>
+
+  <p class="disclaimer">♡ <b>DRINK RESPONSIBLY</b> ♡<br>理性饮酒 · 快乐游戏</p>
+</div>
+
+<!-- prompt modal -->
+<div id="overlay" class="overlay" role="dialog" aria-modal="true" aria-labelledby="cardLabel" aria-hidden="true">
+  <div class="prompt-wrap">
+    <div id="cardFlip" class="flip-card" role="button" tabindex="0" aria-label="点击牌面关闭" hidden>
+      <div class="flip-inner" id="cardFlipInner">
+        <div class="flip-face flip-back truth-back" id="cardBack">
+          <div class="mark">?</div>
+          <div class="label" id="cardLabel">TRUTH &#183; &#30495;&#24515;&#35805;</div>
+        </div>
+        <div class="flip-face flip-front">
+          <img id="cardFrontImg" alt="" decoding="async">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js?v=20260716" defer></script>
+
+</body>
+</html>

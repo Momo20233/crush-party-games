@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+node_modules/
+apps/tap-moto/.next/
+apps/tap-moto/out/
+apps/tap-moto/dist/
+apps/tap-moto/.vinext/
+apps/tap-moto/.output/
+_site/
+pet-runs/
+coverage/
+*.tsbuildinfo
+*.log
+.env*
+!.env.example

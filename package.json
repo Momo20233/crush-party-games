@@ -1,0 +1,11 @@
+{
+  "name": "crush-party-games",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "assemble": "node scripts/assemble-site.mjs"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
