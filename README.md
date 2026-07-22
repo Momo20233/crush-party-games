@@ -39,6 +39,17 @@ python3 -m http.server 8974 --directory _site
 2. 合并目录首页和三款游戏。
 3. 发布完整网站到 GitHub Pages。
 
-## 许可与素材
+## 许可与素材 / License & Assets
 
-本仓库当前未附开源许可证，公开可见不代表授权他人复用。公开发布前，请确认目录图、角色、卡牌、图片、音频和视频均为原创或已取得公开再分发许可。
+> [!IMPORTANT]
+> **官方网站 / Official Website**
+>
+> [https://momo20233.github.io/crush-party-games/](https://momo20233.github.io/crush-party-games/)
+>
+> **中文**
+>
+> 本仓库当前未附开源许可证，公开可见不代表授权他人复用。公开发布前，请确认目录图、角色、卡牌、图片、音频和视频均为原创或已取得公开再分发许可。
+>
+> **English**
+>
+> This repository does not currently include an open-source license. Public visibility does not grant permission to reuse its contents. Before any public release or redistribution, please ensure that all directory artwork, characters, cards, images, audio, and video are original works or are properly licensed for public redistribution.
