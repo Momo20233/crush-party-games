@@ -1,6 +1,6 @@
 const CARD_COUNTS = {
-  truth: 30,
-  dare: 32
+  truth: 42,
+  dare: 50
 };
 
 const RANDOM_TRUTH_CHANCE = 0.25;
