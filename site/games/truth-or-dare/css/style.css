@@ -47,10 +47,6 @@ body::before{
 .card-btn:active{transform:scale(.94)}
 .card-btn.truth:hover img{filter:drop-shadow(0 0 26px rgba(255,47,146,.65))}
 .card-btn.dare:hover img{filter:drop-shadow(0 0 26px rgba(147,51,234,.75))}
-@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-.card-btn.truth{animation:bob 3.4s ease-in-out infinite}
-.card-btn.dare{animation:bob 3.4s ease-in-out .8s infinite}
-
 /* random button */
 .random-btn{border:none;background:none;cursor:pointer;padding:0;margin-top:clamp(8px,1.8dvh,12px);width:100%;touch-action:manipulation;
   transition:transform .12s ease;}
